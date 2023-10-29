@@ -3,7 +3,12 @@
 /.pnp
 .pnp.js
 /build
-/src/components
+/src/components/DemoCarousel
+/src/components/ResearchCards
+/src/components/TextCarousel
+/src/components/Footer
+
+
 
 # testing
 /coverage
