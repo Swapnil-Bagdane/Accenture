@@ -1,0 +1,919 @@
+.main-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px;
+  padding: 30px;
+}
+.sub-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.initial-container {
+  width: 350px;
+  height: 70vh;
+  background-color: aliceblue;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+}
+.card-heading {
+  color: #000;
+  padding: 30px 40px 5px 30px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.card-title {
+  color: #000;
+  padding: 0px 40px 20px 30px;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.outer-container {
+  width: 350px;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.inner-container {
+  width: 350px;
+  padding: 20px;
+  display: none;
+  transition: all 1s;
+}
+.image-container {
+  text-align: end;
+  padding: 1px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.initial-container:hover {
+  width: 800px;
+}
+.initial-container:hover .inner-container {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.initial-container:hover .image-container {
+  text-align: left;
+}
+
+.card-button {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  color: #000;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.card-button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+
+  left: 0;
+  background-color: #000;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.card-button:hover::after {
+  transform: scaleX(1);
+}
+.initial-container-1 {
+  width: 350px;
+
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenure-Computing-Edge-Hero-3840x2160:rad-card-full?ts=1689657861878&fit=constrain&dpr=off');
+}
+.card-heading-1 {
+  color: #fff;
+  padding: 30px 40px 5px 30px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.card-title-1 {
+  color: #fff;
+  padding: 0px 40px 20px 30px;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.outer-container-1 {
+  width: 350px;
+}
+.description-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.inner-container-1 {
+  width: 350px;
+  padding: 20px;
+  display: none;
+
+  transition: all 1s;
+}
+.card-description-1 {
+  color: #fff;
+}
+.image-container-1 {
+  display: none;
+}
+.initial-container-1:hover .image-container-1 {
+  display: block;
+}
+.percent {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  padding: 10px;
+}
+.img-description {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.initial-container-1:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #291717 30%,
+    #474242 55%,
+    #664142 100%
+  );
+  width: 800px;
+}
+.initial-container-1:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.card-button-1 {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  align-self: flex-end;
+  margin-top: 40px;
+}
+.card-description-1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.card-button-1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+
+  left: 0;
+  background-color: #fff;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.card-button-1:hover::after {
+  transform: scaleX(1);
+}
+
+.initial-container-2 {
+  width: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-StrategyTL-Feat-Img-OT-SKIM-640x425:rad-card-full?ts=1691719374599&fit=constrain&dpr=off');
+}
+.initial-container-2:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #101017 90%,
+    #6b4ba3 50%,
+    #a91eb0 0%
+  );
+  width: 800px;
+}
+.initial-container-2:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-2 {
+  display: none;
+}
+.initial-container-2:hover .image-container-2 {
+  display: block;
+}
+/* 3*/
+.initial-container-3 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-cio-outlook-image:rad-card-full?ts=1692364079839&fit=constrain&dpr=off');
+}
+.initial-container-3:hover {
+  background-image: linear-gradient(to bottom right, #101017 90%, #6b4ba3 50%);
+  width: 800px;
+}
+.initial-container-3:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-3 {
+  display: none;
+}
+.initial-container-3:hover .image-container-3 {
+  display: block;
+}
+/* 4 */
+.initial-container-4 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Maximizing-Cloud-Glance:rad-card-full?ts=1693834751598&fit=constrain&dpr=off');
+}
+.initial-container-4:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #d39ad6 90%,
+    #6b4ba3 50%,
+    #a91eb0 0%
+  );
+  width: 800px;
+}
+.initial-container-4:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-2 {
+  display: none;
+}
+.initial-container-4:hover .image-container-4 {
+  display: block;
+}
+
+/* 5*/
+.initial-container-5 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Thought-Leadership:rad-card-full?ts=1694570507256&fit=constrain&dpr=off');
+}
+.initial-container-5:hover {
+  background-image: linear-gradient(to bottom right, #dbbfd2 90%, #6b4ba3 50%);
+  width: 800px;
+}
+.initial-container-5:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-5 {
+  display: none;
+}
+.initial-container-5:hover .image-container-5 {
+  display: block;
+}
+/* 6 */
+.initial-container-6 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-mqdc-half-card-640x425:rad-card-half?fit=constrain&dpr=off');
+}
+.initial-container-6:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #bdbdbd 90%,
+    #6b4ba3 50%,
+    #a91eb0 0%
+  );
+  width: 800px;
+}
+.initial-container-6:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-6 {
+  display: none;
+}
+.initial-container-6:hover .image-container-6 {
+  display: block;
+}
+
+/* 7 */
+.initial-container-7 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/content/accenture/00_IllustrationTemp_SizingDoc_640x452-01?$none$&fit=constrain&dpr=off');
+}
+.initial-container-7:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #101017 90%,
+    #6b4ba3 50%,
+    #a91eb0 0%
+  );
+  width: 800px;
+}
+.initial-container-7:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-7 {
+  display: none;
+}
+.initial-container-7:hover .image-container-7 {
+  display: block;
+}
+/* 8 */
+.initial-container-8 {
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  transition: width 0.1s ease-in;
+  height: 70vh;
+  background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Cyber-Featured-Image-Glance-skim-640x904:rad-card-full?fit=constrain&dpr=off');
+}
+.initial-container-8:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #b9a2ba 90%,
+    #6b4ba3 50%,
+    #a91eb0 0%
+  );
+  width: 800px;
+}
+.color {
+  color: #000;
+}
+.initial-container-8:hover .inner-container-1 {
+  width: 60%;
+  display: block;
+  font-size: 20px;
+  margin-top: 100px;
+}
+.image-container-8 {
+  display: none;
+}
+.initial-container-8:hover .image-container-8 {
+  display: block;
+}
+.carrd-heading {
+  color: #000;
+}
+.para {
+  color: #000;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.value-heading {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;
+}
+.value-description {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* mobile View */
+
+@media screen and (max-width: 768px) {
+  .main-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px;
+    padding: 30px;
+  }
+  .sub-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .initial-container {
+    width: 300px;
+    height: 60vh;
+    background-color: aliceblue;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+  }
+  .card-heading {
+    color: #000;
+    padding: 10px 15px 5px 10px;
+    font-size: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+  .card-title {
+    color: #000;
+    padding: 0px 15px 6px 10px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+
+  .outer-container {
+    width: 350px;
+  }
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+  }
+  .inner-container {
+    width: 350px;
+    padding: 20px;
+    display: none;
+    transition: all 1s;
+  }
+  .card-image {
+    width: 150px;
+  }
+  .image-container {
+    text-align: end;
+    padding: 1px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .initial-container:hover {
+    width: 360px;
+  }
+  .initial-container:hover .inner-container {
+    width: 60%;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .initial-container:hover .image-container {
+    text-align: left;
+    width: 30%;
+  }
+
+  .card-button {
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    align-self: flex-end;
+  }
+
+  .card-button::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+
+    left: 0;
+    background-color: #000;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+  }
+  .card-button:hover::after {
+    transform: scaleX(1);
+  }
+  .initial-container-1 {
+    width: 300px;
+
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenure-Computing-Edge-Hero-3840x2160:rad-card-full?ts=1689657861878&fit=constrain&dpr=off');
+  }
+  .card-heading-1 {
+    color: #fff;
+    padding: 10px 15px 5px 10px;
+    font-size: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
+  .card-title-1 {
+    color: #fff;
+    padding: 0px 15px 10px 10px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+  .outer-container-1 {
+    width: 350px;
+  }
+  .description-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+  }
+  .inner-container-1 {
+    width: 350px;
+    padding: 20px;
+    display: none;
+
+    transition: all 1s;
+  }
+  .card-description-1 {
+    color: #fff;
+  }
+  .image-container-1 {
+    display: none;
+  }
+  .initial-container-1:hover .image-container-1 {
+    display: block;
+  }
+  .percent {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    padding: 5px;
+  }
+  .img-description {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+  .initial-container-1:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #291717 30%,
+      #474242 55%,
+      #664142 100%
+    );
+    width: 350px;
+  }
+  .initial-container-1:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  .card-button-1 {
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-top: 40px;
+  }
+  .card-description-1 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card-button-1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+  }
+  .card-button-1:hover::after {
+    transform: scaleX(1);
+  }
+
+  .initial-container-2 {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-StrategyTL-Feat-Img-OT-SKIM-640x425:rad-card-full?ts=1691719374599&fit=constrain&dpr=off');
+  }
+  .initial-container-2:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #101017 90%,
+      #6b4ba3 50%,
+      #a91eb0 0%
+    );
+    width: 350px;
+  }
+  .initial-container-2:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-2 {
+    display: none;
+  }
+  .initial-container-2:hover .image-container-2 {
+    display: block;
+  }
+  /* 3*/
+  .initial-container-3 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-cio-outlook-image:rad-card-full?ts=1692364079839&fit=constrain&dpr=off');
+  }
+  .initial-container-3:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #101017 90%,
+      #6b4ba3 50%
+    );
+    width: 350px;
+  }
+  .initial-container-3:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-3 {
+    display: none;
+  }
+  .initial-container-3:hover .image-container-3 {
+    display: block;
+  }
+  /* 4 */
+  .initial-container-4 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Maximizing-Cloud-Glance:rad-card-full?ts=1693834751598&fit=constrain&dpr=off');
+  }
+  .initial-container-4:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #d39ad6 90%,
+      #6b4ba3 50%,
+      #a91eb0 0%
+    );
+    width: 350px;
+  }
+  .initial-container-4:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-2 {
+    display: none;
+  }
+  .initial-container-4:hover .image-container-4 {
+    display: block;
+  }
+
+  /* 5*/
+  .initial-container-5 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Thought-Leadership:rad-card-full?ts=1694570507256&fit=constrain&dpr=off');
+  }
+  .initial-container-5:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #dbbfd2 90%,
+      #6b4ba3 50%
+    );
+    width: 350px;
+  }
+  .initial-container-5:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-5 {
+    display: none;
+  }
+  .initial-container-5:hover .image-container-5 {
+    display: block;
+  }
+  /* 6 */
+  .initial-container-6 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Accenture-mqdc-half-card-640x425:rad-card-half?fit=constrain&dpr=off');
+  }
+  .initial-container-6:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #bdbdbd 90%,
+      #6b4ba3 50%,
+      #a91eb0 0%
+    );
+    width: 350px;
+  }
+  .initial-container-6:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-6 {
+    display: none;
+  }
+  .initial-container-6:hover .image-container-6 {
+    display: block;
+  }
+
+  /* 7 */
+  .initial-container-7 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/content/accenture/00_IllustrationTemp_SizingDoc_640x452-01?$none$&fit=constrain&dpr=off');
+  }
+  .initial-container-7:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #101017 90%,
+      #6b4ba3 50%,
+      #a91eb0 0%
+    );
+    width: 350px;
+  }
+  .initial-container-7:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-7 {
+    display: none;
+  }
+  .initial-container-7:hover .image-container-7 {
+    display: block;
+  }
+  /* 8 */
+  .initial-container-8 {
+    width: 300px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-size: cover;
+    transition: width 0.1s ease-in;
+    height: 60vh;
+    background-image: url('https://dynamicmedia.accenture.com/is/image/accenture/Cyber-Featured-Image-Glance-skim-640x904:rad-card-full?fit=constrain&dpr=off');
+  }
+  .initial-container-8:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      #b9a2ba 90%,
+      #6b4ba3 50%,
+      #a91eb0 0%
+    );
+    width: 350px;
+  }
+  .initial-container-8:hover .inner-container-1 {
+    width: 60%;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .image-container-8 {
+    display: none;
+  }
+  .initial-container-8:hover .image-container-8 {
+    display: block;
+  }
+  .carrd-heading {
+    color: #000;
+  }
+  .value-heading {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 100px;
+    text-align: center;
+  }
+  .value-description {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+}
